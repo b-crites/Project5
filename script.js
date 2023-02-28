@@ -29,6 +29,6 @@ const currentDayEl = document.getElementById('currentDay')
   
   var dayVar = dayjs();
   var dayVarSubtracted = dayVar.subtract(8, 'h')
-  currentDayEl.innerHTML = dayjs();
+  currentDayEl.innerHTML = dayVarSubtracted;
   console.log(dayjs());
 // });
