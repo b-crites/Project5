@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     // loop over time blocks
     $(".time-block").each(function () {
-        var blockTime = parseInt($(this).attr("id").split("hour")[2]);
+        var blockTime = parseInt($(this).attr("id").split("hour")[1]);
 
         // To check the time and add the classes for background indicators
         if (blockTime < dayHour) {
@@ -65,12 +65,13 @@ $(document).ready(function(){
   //
   // TODO: Add code to display the current date in the header of the page.
   var dayVar = dayjs();
+  var dayVarSubtracted = dayVar.subtract(7, 'h')
   var dayHour = dayjs().hour();
   console.log(dayVar.hour());
-  currentDayEl.innerHTML = dayVar;
+  currentDayEl.innerHTML = dayVarSubtracted;
   
   // var dayVar = dayjs().hour();
-  // var dayVarSubtracted = dayVar.subtract(7, 'h')
+  var dayVarSubtracted = dayVar.subtract(7, 'h')
   // currentDayEl.innerHTML = dayVarSubtracted;
   // console.log(dayjs());
   // Local Storage
