@@ -68,7 +68,7 @@ $(document).ready(function(){
   var dayVarSubtracted = dayVar.subtract(7, 'h')
   var dayHour = dayjs().hour();
   console.log(dayVar.hour());
-  currentDayEl.innerHTML = dayVarSubtracted;
+  currentDayEl.innerHTML = dayVar;
   
   // var dayVar = dayjs().hour();
   var dayVarSubtracted = dayVar.subtract(7, 'h')
